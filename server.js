@@ -20,6 +20,8 @@ var middleware = {
     next();
   }
 };
+
+//git commiting
 app.use(middleware.logger);
 app.use(middleware.requireAuthentication);
 

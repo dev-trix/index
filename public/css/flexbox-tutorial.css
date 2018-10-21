@@ -1,0 +1,90 @@
+@media (min-width: 400px) {
+  .container-1 {
+    display: flex;
+    /* align-items: flex-start; */
+    /* align-items:flex-end; */
+    /* align-items:center; */
+    /* flex-direction: column; */
+  }
+
+  .container-2 {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+  }
+}
+
+.container-1 div,
+.container-2 div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 3;
+  order: 2;
+}
+
+.box-2 {
+  flex: 1;
+  order: 1;
+}
+
+.box-3 {
+  flex: 1;
+  order: 3;
+}
+
+.container-2-box {
+  width: 29px;
+  /* flex-basis: 3px; */
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+}
+.right-col {
+  flex-flow: column wrap;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+}
+.menu {
+  flex-basis: 10%;
+  background: lightblue;
+}
+.header {
+  flex: 0 0 10%;
+  background: lightgray;
+}
+.body {
+  flex: 0 0 80%;
+  background: purple;
+}
+.footer {
+  flex: 0 0 10%;
+  background: lightgreen;
+}
+
+/* #calendar {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.th {
+  flex: 30px 0 0;
+}
+.week {
+  flex: 30px 1 0;
+  border-bottom: 1px solid #ccc;
+} */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title> Email Marketing Registration </title>
+    <!-- <link rel="stilesheet" href="css/email-market.css" type="text/css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <link href="css/email-marketing.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="background">
+
+
+    <section>
+        <div class="container">
+            <nav class="container navbar navbar-default navbar-fixed-top navbar-inverse" style="border-radius:3px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="#">Trix</a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ">
+                            <li class="active"><a href="#" style="font-family:'Slabo:20px', serif;">Home</a></li>
+                            <li><a href="index.html#middle" style="font-family:'Slabo:20px', serif;">Services</a></li>
+
+                            <li><a href="#" style="font-family:'Slabo:20px', serif;">About Us</a></li>
+                            <li><a href="email-marketing.html" style="font-family:'Slabo:20px', serif;">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="login-box">
+        <h1>Sign up here</h1>
+        <form method="POST">
+            <p>First Name: </p>
+            <input type="text" id="fname" name="fname" placeholder="Enter Firstname" required>
+
+            <p>Last Name: </p>
+            <input type="text" name="lname" placeholder="Enter Lastname" required>
+
+            <p>Email: </p>
+            <input type="email" name="email" placeholder="Enter Email" required>
+
+            <p>Phone Number: </p>
+            <input type="text" name="pnumber" placeholder="Number" required>
+
+            <input type="submit" id="submitButton" name="submit" value="Submit">
+            <!-- <br> -->
+            <!-- <a href= '#'> Forgot password</a> -->
+        </form>
+    </div>
+
+    <!-- <img src="logo.png" class="logo"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+        var fname = document.getElementById("fname");
+        var lname = document.getElementById("lname");
+        var email = document.getElementById("email");
+        var pnumber = document.getElementById("pnumber");
+        var subButton = document.getElementById("submitButton");
+
+        subButton.addEventListener("click", submitRegitiation)
+
+        function submitRegitiation() {
+
+
+            // if (fname.value.length >= 1) {
+            //     alert("Successful" + fname.value)
+            // } else {
+            //     alert("Error!")
+            // }
+            // if (lname.value.length >= 1) {
+            //     alert("Successful" + fname.value)
+            // } else {
+            //     alert("Error!")
+            // }
+            // if (pnumber.value.length >= 1) {
+            //     alert("Successful" + pnumber.value)
+            // } else {
+            //     alert("Error!")
+            // }
+            // if (email.value.length >= 1) {
+            //     alert("Successful" + email.value)
+            // } else {
+            //     alert("Error!")
+            // }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
